@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace FactoryMethod.Product
+﻿namespace FactoryMethod.Product
 {
-    class CartaoCredito
+    public abstract class CartaoCredito
     {
+        public abstract string TipoCartao { get; }
+        public abstract int LimiteCredito { get; set; }
+        public abstract int CobrancaAnual { get; set; }
     }
 }

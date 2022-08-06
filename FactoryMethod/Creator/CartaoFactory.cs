@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using FactoryMethod.Product;
 
 namespace FactoryMethod.Creator
 {
-    class CartaoFactory
+    public abstract class CartaoFactory
     {
+        public abstract CartaoCredito BuscarCartaoCredito();
     }
 }
