@@ -10,7 +10,9 @@ namespace FactoryMethod
         static void Main(string[] args)
         {
             CartaoFactory cartaoFactory = null;
-            Console.Write("Digite o tipo de cartão que gostaria de obter:");
+
+            Console.Write("Digite o tipo de cartão que gostaria de obter: ");
+
             string console = Console.ReadLine();
 
             switch (console.ToLower())
@@ -28,6 +30,8 @@ namespace FactoryMethod
                     break;
             }
 
+            //Polimorfismo
+            //vai devolver o objeto do tipo do produto (black, titanium e platinum)
             CartaoCredito cartaoCredito = cartaoFactory.BuscarCartaoCredito();
             
             Console.WriteLine("\nOs detalhes do seu cartão estão abaixo: \n");
